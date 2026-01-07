@@ -12,11 +12,18 @@
     transform: rotate(350deg);
 }
 #scale{ /*scale 1 is original. Less then 1 is smaller, greater then 1 is larger */
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 #skew{
-    transform: skew();
+    transform: skew(-40deg);
 }
+/* translate(x)/(y) just use 1 number moves along x/y axis. Use translate(x,y) to move along both axis */
 #translate{
-    transform: translate();
+    transform: translate(325px,100px);
+}
+/* you can chain multiple transforms on the same element */
+#chain{
+    transform: rotate(20deg) translate(90px) scale(2) skew(10deg);
+
+
 }
